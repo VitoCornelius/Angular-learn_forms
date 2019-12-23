@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
+    FormsModule, //has to be in oder to use the forms related functionality -> this sees the <form> and detect the input
   ],
   providers: [],
   bootstrap: [AppComponent]
