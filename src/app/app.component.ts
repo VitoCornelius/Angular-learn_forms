@@ -17,6 +17,20 @@ export class AppComponent {
 
   suggestUserName() {
     const suggestedName = 'Superuser';
+    // this.signupForm.setValue({ //set value of all the object of the form not the best approach , since it will delete all the previous valus
+    //   userData : {
+    //     username : 'Rafal',
+    //     email : 'dupa@gmailcom'
+    //   },
+    //   secret : 'pet',
+    //   questionAnswer : '',
+    //   gender : 'male'
+    // })
+    this.signupForm.form.patchValue({ //only pathes the value
+      userData : {
+        username : 'Rafal'
+      }
+    })
   }
 
   // onSubmit(form : NgForm) {
