@@ -9,7 +9,10 @@ import { NgForm } from '@angular/forms';
 export class AppComponent {
 
   @ViewChild('f',  {static: false}) signupForm : NgForm; //we can use this as well 
+
   defaultQuestion = 'pet';
+
+  answer = ''; //two way biding
 
   suggestUserName() {
     const suggestedName = 'Superuser';
