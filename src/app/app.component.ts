@@ -11,6 +11,7 @@ export class AppComponent {
   @ViewChild('f',  {static: false}) signupForm : NgForm; //we can use this as well 
 
   defaultQuestion = 'pet';
+  genders = ['male', 'female'];
 
   answer = ''; //two way biding
 
