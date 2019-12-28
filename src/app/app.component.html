@@ -7,6 +7,7 @@
       > 
         <div id="user-data"
         ngModelGroup="userData"
+        #userData="ngModelGroup"
         > 
 
           <div class="form-group">
@@ -36,6 +37,8 @@
           </div> 
                    
         </div>
+
+        <p *ngIf="!userData.valid && userData.touched">The user data is invalid</p>
 
         <div class="form-group">
           <label for="secret">Secret Questions</label>
